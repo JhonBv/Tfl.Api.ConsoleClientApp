@@ -1,8 +1,14 @@
 
 #  Tfl Console Client App
 
-##  Structure
+##  Contents
+There exists three folders in the solution:
+* TechTest
+* ClientTests
+* ApiTest
 
+#### PLEASE IGNORE the ApiTest proyect as it was created so that off-line development could be possible.
+## Solution Structure
 The solution contains two projects:
 #### Tfl.API.ConsoleClientApp.
 The Tfl.API.ConsoleClientApp project is where all the logic is executed and the TFL Road Information API is consumed.
