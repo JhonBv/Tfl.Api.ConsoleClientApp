@@ -47,7 +47,7 @@ Open the command line and navigate to the folder where the project has been down
 
 ```
 
-![MS Console](ConsoleCapture.PNG)
+![MS Console](\ConsoleCapture.PNG)
 
 
 # Improvements
