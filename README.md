@@ -46,11 +46,12 @@ Open the command line and navigate to the folder where the project has been down
 {yourPath}\TechTest\TechTest\bin\Debug\netcoreapp2.1>dotnet TechTest.dll
 
 ```
-Include logo/demo screenshot etc.
-![MS Console](ConsoleCapture.PNG)
+
+![MS Console](\ConsoleCapture.PNG)
 
 
 # Improvements
+Every time I look at my code I realise that it can become even better. I acknowledge that refactoring is a key part of every system and it is a key skill for us, developers. I have taken much care in trying to identify quialifying classes etc for refactoring whilst also trying not to over engineer the application. Although much work can be done, I have listed below few that I think should be looked into more detail.
 
 ## Best use of HttpClient Factory
 
@@ -61,7 +62,7 @@ In this project I made an effort to use the Microsoft HttpClient Factory. I woul
 For the sake of this small exercise, the Api keys are stored in a plain text file (git ignored) however, if this app should be hosted in an Azure service, a proper storing mechanism such as Azure vault could have been used.
 
 ## Unit Testing
-Unit testing could have been written in an even cleaner way, for example by using SpecFlow to properly test behaviours (BDD). I tried to use it but I was not successful as I am not 100% familiar of how it works in .Net Core.
+Unit testing could have been written in an even cleaner way, for example by using SpecFlow (https://specflow.org/) to properly test behaviours (BDD). I tried to use it but I was not successful as I am not 100% familiar of how it works in .Net Core.
 
 ## FluentAssertions
 
