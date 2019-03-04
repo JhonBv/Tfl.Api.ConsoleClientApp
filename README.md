@@ -46,8 +46,8 @@ Open the command line and navigate to the folder where the project has been down
 {yourPath}\TechTest\TechTest\bin\Debug\netcoreapp2.1>dotnet TechTest.dll
 
 ```
-Include logo/demo screenshot etc.
-![MS Console](blob/master/TechTest/ConsoleCapture.PNG)
+
+![MS Console](ConsoleCapture.PNG)
 
 
 # Improvements
