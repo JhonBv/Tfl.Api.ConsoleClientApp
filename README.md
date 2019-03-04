@@ -14,9 +14,9 @@ The opened solution should look like the image below:
 
 ## Solution Structure
 The solution contains two projects:
-#### Tfl.API.ConsoleClientApp.
+#### Tfl.API.ConsoleClientApp (TechTest folder)
 The Tfl.API.ConsoleClientApp project is where all the logic is executed and the TFL Road Information API is consumed.
-#### Tfl.API.ConsoleClientApp.Tests
+#### Tfl.API.ConsoleClientApp.Tests (ClientTests folder)
 The Tfl.API.ConsoleClientApp.Tests project contains all the unit testing and Mocking of the API responses.
 ## Project dependencies
 
@@ -69,6 +69,8 @@ dotnet publish -c Release -r win10-x64
 
 # Improvements
 Every time I look at my code I realise that it can become even better. I acknowledge that refactoring is a key part of every system and it is a key skill for us, developers. I have taken much care in trying to identify quialifying classes etc for refactoring whilst also trying not to over engineer the application. Although much work can be done, I have listed below few that I think should be looked into more detail.
+## Naming of Folders/Files
+I would have done a better job if the folder naming used would match with the project's name. At present, the TechTest folder contains the "Tfl.API.ConsoleClientApp" which is the client console application project, and the ClientTests folder contains the "Tfl.API.ConsoleClientApp.Tests" project which can be confusing. Changing it is posible however I will have to make changes to the .sln file but it is definitely worth.
 
 ## Best use of HttpClient Factory
 
