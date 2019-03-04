@@ -1,8 +1,19 @@
 
 #  Tfl Console Client App
 
-##  Structure
+##  Contents
+There exists three folders in the solution:
+* TechTest
+* ClientTests
+* ApiTest
 
+#### PLEASE IGNORE the ApiTest project as it was created so that off-line development could be possible.
+
+The opened solution should look like the image below:
+![Solution Structure](TflSolutionCapture.PNG)
+![Solution structure](https://thechannelstorageacc.file.core.windows.net/githubimages/TflSolutionCapture.PNG)
+
+## Solution Structure
 The solution contains two projects:
 #### Tfl.API.ConsoleClientApp.
 The Tfl.API.ConsoleClientApp project is where all the logic is executed and the TFL Road Information API is consumed.
@@ -47,7 +58,7 @@ Open the command line and navigate to the folder where the project has been down
 
 ```
 
-![MS Console](\ConsoleCapture.PNG)
+![MS Console](https://thechannelstorageacc.file.core.windows.net/githubimages/ConsoleCapture.PNG)
 
 
 # Improvements
@@ -73,5 +84,3 @@ _mock.Object.ValidateRequest(MockResponse.InvalidHttpResponseMock(), "a333").Sho
 It seems that the .Throw<Exception>() extension method is not supported anymore in the latest version. I need to investigate about this more.
 
 I would also like to perform proper reuse of DI from the Client App rather than doing it again in the Test project.
-
- 
