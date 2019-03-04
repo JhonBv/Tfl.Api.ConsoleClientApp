@@ -1,10 +1,10 @@
 ﻿using NUnit.Framework;
 using Tfl.API.ConsoleClientApp.Configuration;
 
-namespace ClientTests
+namespace Tfl.API.ConsoleClientApp.Tests
 {
     [TestFixture]
-    public class ConfigurationTests:BaseTestClass
+    public class ClientConfigurationTests:BaseTestClass
     {
         [Test]
         //Make sure both, appkey and appid are in the file. BaseClass have alreaddy the first AA of the AAA approach implemented.

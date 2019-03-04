@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Tfl.API.ConsoleClientApp.Services;
 using Tfl.API.ConsoleClientApp.Configuration;
 
-namespace TechTest.Services
+namespace Tfl.API.ConsoleClientApp.Services
 {
     /// <summary>
     /// JB. Client implementation of the HttpClient.

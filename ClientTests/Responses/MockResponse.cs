@@ -3,6 +3,10 @@ using Tfl.API.ConsoleClientApp.Models;
 
 namespace Tfl.API.ConsoleClientApp.MockObjects
 {
+    /// <summary>
+    /// JB. Mocking the response format and some of the messages expected from the API.
+    /// so that we can perform Unit tests mocking the response. We can also test the JObject validator
+    /// </summary>
     public static class MockResponse
     {
         public static JObject ValidResponse(string id)

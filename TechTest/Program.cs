@@ -5,7 +5,6 @@ using Serilog;
 using System.Threading.Tasks;
 using Tfl.API.ConsoleClientApp.Factories;
 using Tfl.API.ConsoleClientApp.Interfaces;
-using TechTest.Services;
 using Tfl.API.ConsoleClientApp.Exceptions;
 using Tfl.API.ConsoleClientApp.Services;
 
