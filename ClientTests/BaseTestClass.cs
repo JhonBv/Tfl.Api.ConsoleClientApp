@@ -17,9 +17,11 @@ namespace Tfl.API.ConsoleClientApp.Tests
         public ResponseFactory responseFactory;
         public RequestValidatorService validator;
         public JObjectFactory jObjectFactory;
+        public TflClientService tflClient;
 
         public Mock<IResponseFactory> _ResponseFactory;
-        public Mock<IJObjectFactory> _JObjectBuilder;
+        public Mock<IJObjectFactory> _JObjectFactory;
+        public Mock<ITflClientService> _TflClient;
 
         public Configuration config;
 

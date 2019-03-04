@@ -7,6 +7,7 @@ using Tfl.API.ConsoleClientApp.Factories;
 using Tfl.API.ConsoleClientApp.Interfaces;
 using FluentAssertions;
 using Tfl.API.ConsoleClientApp.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Tfl.API.ConsoleClientApp.Tests
 {
@@ -17,19 +18,32 @@ namespace Tfl.API.ConsoleClientApp.Tests
     public class RoadInformationTests:BaseTestClass
     {
         [Test]
+        public void Make_sure_TflClientService_can_Communicate_With_TFL_API()
+        {
+            //Arrange
+            _TflClient = new Mock<ITflClientService>();
+            _ResponseFactory = new Mock<IResponseFactory>();
+            
+            //Act
+            var services = new Configuration().returnServiceCollection();
+            
+            //Assert
+            _TflClient.Object.InitializeClient("a2", services).Should().NotBeNull();
+        }
+        [Test]
         public void Given_a_Valid_Road_Id_Is_Specified_Return_Road_Name()
         {            
             //Arrange
             responseFactory = new ResponseFactory();
             var _mock = new Mock<IResponseFactory>();
-            _JObjectBuilder = new Mock<IJObjectFactory>();
+            _JObjectFactory = new Mock<IJObjectFactory>();
 
             //Act
             _mock.Setup(x => x.BuildResponse(It.IsAny<JObject>())).Returns(responseFactory.BuildResponse(MockResponse.ValidResponse("a4")));
-            _JObjectBuilder.Setup(o=>o.ReturnAsJObect(MockResponse.ValidHttpResponseMock("A4"))).Equals(typeof(JObject));
+            _JObjectFactory.Setup(o=>o.ReturnAsJObect(MockResponse.ValidHttpResponseMock("A4"))).Equals(typeof(JObject));
 
             //Assert
-            _JObjectBuilder.Verify();
+            _JObjectFactory.Verify();
 
             _mock.Should().NotBeNull();
             
@@ -93,7 +107,8 @@ namespace Tfl.API.ConsoleClientApp.Tests
            //Assert
             _mock.Verify();
 
-            //JB. Could not verify the Throwing type with FluentAssertions for some reason the Throw<Exception>() method does not work anymore.
+            //[JB. Could not verify the Throwing type with FluentAssertions 
+            //for some reason the Throw<Exception>() method does not work anymore.]
             //_mock.Object.ValidateRequest(MockResponse.InvalidHttpResponseMock(), "a333").Should().Throw<InvalidRoadException>();
 
             invalidRoad.Should().BeOfType<InvalidRoadException>().Which.Message.Should().Contain(" is not a valid road");

@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Tfl.API.ConsoleClientApp.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using Tfl.API.ConsoleClientApp.Services;
 using Tfl.API.ConsoleClientApp.Configuration;
 
 namespace Tfl.API.ConsoleClientApp.Services

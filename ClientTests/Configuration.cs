@@ -7,14 +7,21 @@ namespace Tfl.API.ConsoleClientApp.Tests
 {
     public class Configuration
     {
+        public ServiceCollection services;
         public Configuration()
         {
+            services = new ServiceCollection();
             ConfigureDi();
+        }
+
+        public ServiceCollection returnServiceCollection()
+        {
+            return services;
         }
 
         public void ConfigureDi()
         {
-            var services = new ServiceCollection();
+            //var services = new ServiceCollection();
             services.AddSingleton<IHttpClientFactoryService, HttpClientFactoryService>();
             services.AddSingleton<IJObjectFactory, JObjectFactory>();
             services.AddSingleton<IResponseFactory, ResponseFactory>();
