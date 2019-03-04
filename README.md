@@ -62,7 +62,7 @@ In this project I made an effort to use the Microsoft HttpClient Factory. I woul
 For the sake of this small exercise, the Api keys are stored in a plain text file (git ignored) however, if this app should be hosted in an Azure service, a proper storing mechanism such as Azure vault could have been used.
 
 ## Unit Testing
-Unit testing could have been written in an even cleaner way, for example by using SpecFlow to properly test behaviours (BDD). I tried to use it but I was not successful as I am not 100% familiar of how it works in .Net Core.
+Unit testing could have been written in an even cleaner way, for example by using SpecFlow (https://specflow.org/) to properly test behaviours (BDD). I tried to use it but I was not successful as I am not 100% familiar of how it works in .Net Core.
 
 ## FluentAssertions
 
