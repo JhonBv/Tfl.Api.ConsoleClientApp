@@ -47,7 +47,7 @@ Open the command line and navigate to the folder where the project has been down
 
 ```
 Include logo/demo screenshot etc.
-![MS Console](ConsoleCapture.PNG)
+![MS Console](blob/master/TechTest/ConsoleCapture.PNG)
 
 
 # Improvements
