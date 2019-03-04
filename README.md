@@ -10,7 +10,6 @@ There exists three folders in the solution:
 #### PLEASE IGNORE the ApiTest project as it was created so that off-line development could be possible.
 
 The opened solution should look like the image below:
-![Solution Structure](TflSolutionCapture.PNG)
 ![Solution structure](https://thechannelstorageacc.file.core.windows.net/githubimages/TflSolutionCapture.PNG)
 
 ## Solution Structure
